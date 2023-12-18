@@ -1,0 +1,61 @@
+[
+    {
+        "title": "Bio",
+        "url": "bio",
+        "faIcon": "fa-user"
+    },
+    {
+        "title": "Classes",
+        "url": "clases",
+        "faIcon": "fa-chalkboard-teacher"
+    },
+    {
+        "title": "Link Tree",
+        "url": "https://linktr.ee/theacroguru",
+        "faIcon": "fa-seedling",
+        "external": true
+    },
+    {
+        "title": "Contact",
+        "url": "mailto:ekam.yoga.lx@gmail.com?subject=web%20contact!",
+        "faIcon": "fa-envelope",
+        "external": true
+    },
+    {
+        "title": "Flows",
+        "subItems": [
+            {
+                "title": "FlashMob AY Portugal Community",
+                "url": "flows/flashmob",
+                "faIcon": "fa-users"
+            },
+            {
+                "title": "Acrovinyasa 1",
+                "url": "flows/acrovinyasa",
+                "faIcon": "fa-dove"
+            },
+            {
+                "title": "Yo' lil' Grasshopper Flow",
+                "url": "flows/grass",
+                "faIcon": "fa-dragon"
+            }
+        ],
+        "faIcon": "fa-water"
+    },
+    {
+        "title": "Method",
+        "subItems": [
+            {
+                "title": "Red Acro Book",
+                "url": "method/info",
+                "faIcon": "fa-book"
+            },
+            {
+                "title": "16 Beginner Machines",
+                "url": "method/16mach",
+                "faIcon": "fa-cogs"
+            }
+        ],
+        "faIcon": "fa-tools"
+    }
+]

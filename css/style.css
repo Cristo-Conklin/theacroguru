@@ -1,197 +1,176 @@
-/* General */
-body {
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  min-height:100vh;
-  margin: 0;
-  padding: 20px;
-  box-sizing:border-box;
-  background-color: #EFEFEF;
-  color: #707070;
-  text-align: center;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  line-height: 1.5;
-  font-size: 16px;
-  word-wrap: break-word;
+body { margin: 0; padding: 0; background-color: #041014; font-family: "cambria", sans-serif; text-align: center; }
+div{color: #bea925;}
+h1 { color: #bea925; margin: 20px 0; font-size: 2.5em; 
+}
+h2, p{color: #dec945; font-size: 0.77em; }
+h3{color: #dec945; font-size: 0.5em; }
+
+.container { position: relative; width: 90vw; height: 90vw; max-width: 600px; max-height: 600px; margin: 20px auto; overflow: visible; padding-top: 7%;}
+.circle-menu-box { width: 100%; height: 100%; position: relative; }
+.circle-menu-box a.menu-item { text-decoration: none; border-radius: 50%; background-color: #145369; color: #bea925; display: flex; justify-content: center; align-items: center; position: absolute; transition: transform 0.5s; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
+.circle-menu-box a.menu-item:hover { transform: scale(1.2); color: #fff; background-color: #bea925; }
+.avatar { border-radius: 50%; overflow: hidden; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 10; }
+.avatar img { width: 100%; height: auto; }
+
+@media (min-width: 600px) { 
+    .circle-menu-box a.menu-item { width: 100px; height: 100px; font-size: 30px; }
+    .avatar { width: 120px; height: 120px; }
+}
+@media (max-width: 599px) { 
+    .circle-menu-box a.menu-item { width: 16vw; height: 16vw; font-size: 5vw; min-width: 60px; min-height: 60px; }
+    .avatar { width: 30vw; height: 30vw; min-width: 90px; min-height: 90px; }
+    h1 { font-size: 6vw; }
 }
 
-mark {
-  color: #707070;
-  font-weight: bold;
+/* posts */
+#blog-posts {
+    list-style-type: none; /* Removes the default list item marker */
+    padding: 0; /* Removes the default padding */
 }
 
-a:link {
-  color: #707070;
+#blog-posts li {
+    background-color: #145369; /* Secondary color */
+    margin-bottom: 10px; /* Space between items */
+    border-radius: 5px; /* Rounded corners for the list items */
 }
 
-a:visited {
-  color: #707070;
+#blog-posts li a {
+    color: #bea925; /* Golden color for the text */
+    display: block; /* Makes the link fill the entire list item */
+    padding: 10px 15px; /* Padding inside the list items */
+    text-decoration: none; /* Removes the underline from the links */
+    transition: background-color 0.3s ease; /* Smooth background color transition for hover effect */
 }
 
-a:hover {
-  color: #707070;
+#blog-posts li a:hover {
+    background-color: #2596be; /* Primary color for hover effect */
+    color: #fff; /* White text on hover */
 }
 
-a:active {
-  color: #707070;
+/* blog sections text */
+
+.blog-section {
+    padding: 15px; /* Add some padding */
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 960px; /* Maximum width of the content */
 }
 
-/* Header */
-header .avatar {
-  position: relative;
-  height: 100px;
+/* Responsive behavior */
+@media (max-width: 991px) {
+    .blog-section {
+        max-width: 720px;
+    }
 }
 
-header .avatar img {
-  position: absolute;
-  width: 100px;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
+@media (max-width: 767px) {
+    .blog-section {
+        max-width: 540px;
+    }
 }
 
-header .avatarMask {
-  clip-path: circle(48px at center);
-  -webkit-clip-path: circle(48px at center);
+@media (max-width: 575px) {
+    .blog-section {
+        max-width: 100%; /* On very small screens, take full width */
+    }
 }
 
-/* Footer */
-footer {
-  font-size: 12px;
-  box-sizing:border-box;
+
+/* ul for buttons bio, clases.. */
+#blog-section ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-/* Top page */
-#profileContainer {
-  min-height: calc(100vh - 100px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#blog-section ul li {
+    background-color: #145369;
+    margin-bottom: 10px;
+    border-radius: 5px;
 }
 
-#profile {
-  max-width: 600px;
-  /* min-width: 300px; */
+#blog-section ul li a {
+    color: #bea925;
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
-nav ul {
-  display: flex;
-  justify-content: center;
-  padding: 0;
-  list-style: none;
+#blog-section ul li a:hover {
+    background-color: #2596be;
+    color: #fff;
 }
 
-nav li {
-  margin: 0 10px;
+
+.back-button {
+    background-color: #145369; /* Secondary color */
+    color: #bea925; /* Golden color for the text */
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.back-button:hover {
+    background-color: #2596be; /* Primary color for hover effect */
+    color: #fff;
 }
 
-/* Contents List */
-#searchBox {
-  position: relative;
-  max-width: 300px;
-  height: 30px;
-  margin: 20px auto;
+.circle-menu-box {
+    position: relative;
+    /* Other styling as needed */
 }
 
-#searchBox #searchBoxInput {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  padding: 0 35px 0 15px;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 15px;
-  outline: 0;
-  font-size: 15px;
-  color: #707070;
-  background-color:#f6f6f6;
-  border: solid 1px #c9c9c9;
-  box-sizing: border-box;
+.menu-item {
+    /* Existing styles for the circular menu items */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* Ensure the text fits below the icon */
 }
 
-#searchBox #searchBoxInput::placeholder {
-  color: #c9c9c9;
+.menu-item .fa {
+    /* Icon styles, if needed */
+    margin-bottom: 4px; /* Space between icon and text */
 }
 
-#searchBox #searchBoxIcon {
-  position: absolute;
-  height: 20px;
-  width: 20px;
-  top: 5px;
-  right: 10px;
+.menu-label {
+    display: block; /* Show the label */
+    color: #bea925; /* Golden color for the text */
+    font-size: 0.8em; /* Smaller font size for the label */
+    margin-top: 4px; /* Space above the label */
 }
 
-#searchResults {
-  display: none;
-  position: absolute;
-  max-width: 600px;
-  /* min-width: 300px; */
-  margin: 0 auto;
-  top: 330px;
-  left: 0;
-  right: 0;
-  padding: 5px;
-  background-color:#f6f6f6;
-  border: solid 1px #c9c9c9;
-  border-radius: 5px;
-  text-align: left;
-  box-sizing: border-box;
+/* Styles for the text menu at the bottom */
+.text-menu {
+    text-align: center;
+    padding: 20px 0; /* Add padding above and below the text menu */
+    background-color: #041014; /* Match the background color */
+    color: #bea925; /* Match the text color */
 }
 
-#searchResults .searchResultPage {
-  padding: 20px
+.text-menu ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
 }
 
-#searchResults .searchResultTitle {
-  font-weight: bold;
-  margin: 5px 0;
+.text-menu li {
+    display: block; /* Display each item on a new line */
+    margin: 5px 0; /* Add some margin between items if desired */
+    margin-right: 10px; /* Space between items */
 }
 
-#searchResults .searchResultBody {
-  font-size: 14px;
+.text-menu a {
+    color: #bea925; /* Text color */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 1em; /* Adjust as needed */
+    display: inline-block; /* If you need to apply padding or margin to the links */
+    width: 100%; /* Ensure the anchor tag fills the whole line for easier touch */
 }
 
-#searchResults mark {
-  background-color: #dddfdf;
-}
 
-#tags ul {
-  max-width: 600px;
-  margin: 0 auto;
-  display: flex;
-  padding: 0;
-  justify-content: center;
-  flex-wrap: wrap;
-  list-style: none;
-}
 
-#tags li a {
-  display: block;
-  height: 24px;
-  margin: 5px;
-  padding: 0 5px;
-  background-color: #dddfdf;
-  border-radius: 5px;
-  font-size: 14px;
-  /* text-decoration: none; */
-}
-
-#contentsList {
-  padding: 20px 0;
-}
-
-#contentsList hr.separator {
-  width: 10px;
-  margin: 30px auto;
-  border: solid 1px #c9c9c9;
-}
-
-/* Page */
-#contentBody {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px 0;
-  text-align: left;
-}
