@@ -97,6 +97,12 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function loadBlogContent(url) {
+        if (url.includes('http') || url.includes('mailto') )
+        { 
+            window.open(url,"_blank");
+            return
+        }
+
         fetch(`/cms/${url}`)
             .then(response => response.text())
             .then(content => {
