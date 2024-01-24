@@ -1,1 +1,379 @@
-<!DOCTYPE html><html lang="en"><head> <meta charset="UTF-8"> <title>the Acro Guru - AcroYoga Coruña</title> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <link rel="shortcut icon" href="https://theacroguru.com/img/favicon.ico"> <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"> <link rel="stylesheet" href=".//css/style.css"></head><body> <h1>the Acro Guru</h1> <!-- h2>Disciplina. Respeto. Confianza. Humor.</h2 --> <h3> #acroyoga #AcroYogaCoruna</h3> <div class="container"> <div class="circle-menu-box"> <!-- <a href="https://theacroguru.com/blog/" title="Blog" class="menu-item"><span class="fa fa-book"></span></a> --> <a href="https://linktr.ee/theacroguru" title="Link Tree" class="menu-item" target="_blank"><span class="fa fa-seedling"></span></a> <a href="mailto:ekam.yoga.lx@gmail.com?subject=web%20contact!" class="menu-item"><span class="fa fa-envelope"></span></a> <!--a href="#" title="IT freelancing" class="menu-item"><span class="fa fa-laptop-code"></span></a--> <div class="avatar"> <img src=".//img/mago.jpg" alt="theAcroGuru avatar"> </div> </div> </div> <script src=".//js/circle-menu.js"></script> <div class="text-menu"> <ul id="text-menu-items"></ul> </div> <div id="blog-section" class="blog-section"> <button id="back-button" style="display: none;" class="back-button">Go Back</button> <div id="blog-posts" class="blog-grid"></div> </div> <script src=".//js/blog-loader.js"></script> <footer> <hr> <p> © 2023 theAcroGuru </p> </footer></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>the Acro Guru</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+	
+
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/theacroguru-custom.css">
+</head>
+<body>
+    <header>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark custom-navbar" style="background-color: #3b5d50;"> <!-- Adjust the background color as per Furni theme -->
+            <div class="container">
+                <a class="navbar-brand" href="#">TheAcroGuru</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-item nav-link active" href="#home">Inicio</a>
+                        <a class="nav-item nav-link" href="#clases">Clases</a>
+                        <a class="nav-item nav-link" href="#about">Acerca de</a>
+                        
+                        <!--a class="nav-item nav-link" 
+                        href="#method">Old Flows Page & Method</a-->
+                        
+                        <a class="nav-item nav-link" href="https://theacroguru.wordpress.com/" target="_blank">Blog</a>
+                        <a class="nav-item nav-link" href="https://www.patreon.com/theacroguru" target="_blank">Patreon</a>
+                        
+                        <!--a class="nav-item nav-link" href="#contact">Contact</a -->
+                        <a class="nav-item nav-link" href="mailto:ekam.yoga.lx@gmail.com?subject=web24%20contact!" target="_blank">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+<div class="hero" id="home">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-lg-5">
+                <div class="intro-excerpt">
+             <h1>Conoce a <span class="d-block">@TheAcroGuru</span></h1>
+<p class="mb-4">Descubre un mundo de equilibrio y creatividad.
+<br>Únete a nosotros para explorar el arte de la acrobacia, el yoga y todo lo demás.</p>
+<p><a href="#clases" class="btn btn-secondary me-2">Clases</a><a 
+href="#about" class="btn btn-white-outline">¿Quien?</a></p>
+     </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="hero-img-wrap">
+                    <img src="images/avatar.jpg" class="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="we-help-section" id="clases">
+  <div class="container main-container">
+    <div class="row justify-content-between">
+      <div class="col-lg-7 mb-5 mb-lg-0">
+        <!-- YouTube Video Embed -->
+        <div class="embed-responsive embed-responsive-16by9 video-container">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jV3tt-zcax4" allowfullscreen></iframe>
+        </div>
+        
+          
+      </div>
+      
+ 
+<div class="col-lg-5 ps-lg-5">
+  <h2 class="section-title mb-4">Únete a Nuestras Clases de AcroYoga</h2>
+  <p>Explora la mezcla dinámica de acrobacias, yoga y masaje tailandés con nuestras clases de AcroYoga. Cada sesión está diseñada para construir fuerza, mejorar la flexibilidad y fomentar un sentido de juego y conexión.</p>
+
+  <ul class="list-unstyled custom-list my-4">
+    <li>Mejora la consciencia corporal y la coordinación</li>
+    <li>Aumenta fuerza y flexibilidad</li>
+    <li>Experimenta la alegría del movimiento y la conexión</li>
+    <li>Accesible para todos los niveles, desde principiantes hasta practicantes avanzados</li>
+  </ul>
+  <!-- Enlace a Clase en Instagram -->
+  <p><a href="https://www.instagram.com/p/B94o503KwYP/" class="btn" target="_blank">Video de Clase para Principiantes en Instagram</a></p>
+  
+       <!--p><a href="" class="btn p-7 m-7" target="_blank">Horarios de 
+       clases</a></p-->
+</div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Biography Section -->
+<div class="why-choose-section" id="about">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-lg-6">
+                <h2 class="section-title">Acerca de mí</h2>
+                <p>Estos son mis principios (pero si no le gustan, tengo otros):</p>
+                <ul>
+                    <li>Disciplina</li>
+                    <li>Respeto</li>
+                    <li>Confianza</li>
+                    <li>Humor</li>
+                </ul>
+                <!--p>He estado practicando yoga desde 2009, cuando había 
+                tan sólo 3 o 4 centros de yoga en Coruña... <br>[Rest 
+                of the biography here]</p-->
+                
+                <div id="contentBody">
+
+<p><strong>He estado practicando yoga desde 2009, cuando había tan sólo 3 o 4 centros de yoga en Coruña, como quien dice.</strong> Comencé con Iyengar Yoga debido a una grave lesión en la espalda. Más tarde practiqué las series de Ashtanga y exploré diversos métodos y disciplinas.</p>
+<p>Desde el 2016 he estado mejorando mis conocimientos de masaje tailandés, Yoga, acro y otras artes y disciplinas relacionadas, estudiando un curso de masaje en la Escuela de Medicina Tradicinal Chinesa de Lisboa, talleres en la escuela de tailandés Hadadi, lecciones de Ashtanga con Xico Rodrigues, Filipa Veiga, Yoga con Margarida Alonso, Filipe Santos, Marta Coias, AcroYoga con Jerzy Badach, Daniel Scott, Lux SeattleAcro, Andrea Macia, Jacob Brown y Debbie Collis… entre otros, contemporáneo con Alba Cotelo, breaking con Samuel_aka_Serio… Kung Fu con Guilherme Luz… y comencé mi formación de maestro en AcroYoga con los increíbles Lucas y Maria de <a href="http://www.acroyogathai.com/"><em>Acro.Yoga.Thai.</em></a>. Todo esto principalmente en Lisboa y formaciones en Barcelona.</p>
+<p><strong>Mi estilo es interdisciplinar trayendo al AcroYoga conocimientos de disciplinas como Kung Fu, Calistenia, Danza, Contacto Improvisación o Tai Chi.</strong> También incluyo vuelo terapéutico con relajamientos en el aire o asanas a dos y varios cuerpos así como fundamentos de masaje tailandés para conseguir un toque sanador y gentil.</p>
+<p><strong>Aspiro a que el acroyoga sea tan conocido y practicado en La Coruña como ha llegado a ser aquí el yoga en los últimos años, y podamos tener clases de acroyoga todos los días y jams semanales practicadas tanto en lugares públicos (parques, playas…) como en centros adecuados durante los meses lluviosos.</strong></p>
+<p>Siempre hay espacio para la diversión trivial.<br>
+Incluso si en mis duras clases el AcroYoga es tratado como el arte de esculpir asanas en movimiento en un eterno aquí y ahora.</p>
+<p><strong>Namasté.</strong> <em>Venga que lo pasará bien usté.</em></p>
+
+  </div>
+            </div>
+            <div class="col-lg-5">
+                <!-- Optional: Any image related to the biography -->
+                <div class="img-wrap">
+                    <img src="images/hamsteryoga.jpg" alt="Yoga 
+                    Acroguru with hamster wheel" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    </main>
+
+<div class="container "></div>
+
+
+<div class="product-section">
+  <div class="container">
+    <div class="row">
+
+      <!-- Start Column 1 -->
+      <div class="col-md-12 col-lg-3 mb-5 mb-lg-0">
+        <h2 class="mb-4 section-title">Virtuosismo y excelencia de gurú.</h2>
+        <p class="mb-4">Descubre la profunda sabiduría y el arte en nuestras cartas de tarot. Cada baraja está diseñada para guiar e inspirar tu viaje interior.</p>
+        <p><a href="https://www.patreon.com/theacroguru" class="btn">Explorar</a></p>
+      </div> 
+      <!-- End Column 1 -->
+
+      <!-- Start Column 2 -->
+      <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+        <a class="product-item" 
+        href="mailto:ekam.yoga.lx@gmail.com?subject=tarot!">
+          <img src="images/joker.png" class="img-fluid product-thumbnail">
+          <h3 class="product-title">Baraja de Tarot @theAcroguru</h3>
+          <strong class="product-price">Próximamente. Reserva!</strong>
+
+          <span class="icon-cross">
+            <img src="images/cross.svg" class="img-fluid">
+          </span>
+        </a>
+      </div> 
+      <!-- End Column 2 -->
+
+      <!-- Start Column 3 -->
+      <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+        <a class="product-item" 
+        href="mailto:ekam.yoga.lx@gmail.com?subject=privates!">
+          <img src="images/clownsabio.jpg" class="img-fluid product-thumbnail">
+          <h3 class="product-title">Lecciones Privadas de AcroYoga</h3>
+          <strong class="product-price">Desde 50 ₿ (Bitcoins)</strong>
+
+          <span class="icon-cross">
+            <img src="images/cross.svg" class="img-fluid">
+          </span>
+        </a>
+      </div>
+      <!-- End Column 3 -->
+
+      <!-- Start Column 4 -->
+      <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+        <a class="product-item" 
+        href="mailto:ekam.yoga.lx@gmail.com?subject=workshop!">
+          <img src="images/sensei.jpg" class="img-fluid product-thumbnail">
+          <h3 class="product-title">Talleres de AcroYoga</h3>
+          <strong class="product-price">A Consultar</strong>
+
+          <span class="icon-cross">
+            <img src="images/cross.svg" class="img-fluid">
+          </span>
+        </a>
+      </div>
+      <!-- End Column 4 -->
+
+    </div>
+  </div>
+</div>
+
+<div class="testimonial-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7 mx-auto text-center">
+        <h2 class="section-title">Testimonios de mis evangelistas</h2>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-12">
+        <div class="testimonial-slider-wrap text-center">
+
+          <!-- Botones de navegación para slider, si es necesario -->
+          
+          <div class="testimonial-slider">
+            
+            <!-- Inicio de item de testimonio -->
+            <div class="item">
+              <div class="row justify-content-center">
+                <div class="col-lg-8 mx-auto">
+<hr>
+                  <div class="testimonial-block text-center">
+                    <blockquote class="mb-5">
+                      <p>"Hace años, cuando me uní a la comunidad de Acroyoga en Lisboa, @theacroguru estaba en Lisboa y entrenaba regularmente con él. Aprendí mucho de él sobre la práctica y puedo dar fe de su profundo entendimiento de los fundamentos que subyacen a la práctica. Cuando me enseñaba, era riguroso, estricto, pero al mismo tiempo divertido. Me entristeció cuando se fue de Lisboa. Continué entrenando y mejorando, a menudo compartiendo con él mis videos y recibiendo críticas constructivas y sugerencias útiles. ¡Gracias, guru!"</p>
+                    </blockquote>
+
+                    <!-- Información del autor del testimonio -->
+                    <div class="author-info">
+  <div class="author-pic">
+    <img src="images/acrobativo.jpg" alt="acrobativo" class="img-fluid">
+  </div>
+  <h3 class="font-weight-bold">@acrobativo</h3>
+  <span class="position d-block mb-3">Instructor de Acroyoga</span>
+</div>
+
+                  </div>
+                  
+                  <hr>
+                  
+                  <div class="testimonial-block">
+  <blockquote>
+    <p>"Aprender con el Acro Guru es nunca aceptar que ya has alcanzado tu potencial, porque él siempre tiene más que enseñar."</p>
+    <p>"¿Y cómo enseña? El humor bastardo del Guru te hará sentir 
+    desafiada, amada y, en los mejores sentidos, despreciada."</p>
+    <p>"¿El Guru merece su nombre? Sí."</p>
+  </blockquote>
+  <div class="author-info">
+	    <div class="author-pic">
+    <img src="images/rachel.jpg" alt="raqroyoga" class="img-fluid">
+  </div>
+    <h3 class="author-name">@raqroyoga</h3>
+    <span class="position d-block mb-3">Profesora de Yoga y practicante 
+    avanzada de Acroyoga</span>
+  </div>
+</div>
+
+
+                </div>
+              </div>
+            </div> 
+            <!-- Fin de item de testimonio -->
+
+            <!-- Otros items de testimonio -->
+            
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+        <footer class="footer-section">
+  <div class="container relative">
+
+    <!--div class="sofa-img">
+      <img src="images/joker.png" alt="Image" class="img-fluid">
+    </div-->
+
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="subscription-form">
+          <h3 class="d-flex align-items-center">
+<div class="subscription-button-wrapper">
+  <a href="mailto:ekam.yoga.lx@gmail.com?subject=subscribe!" target="_blank" class="btn btn-primary subscription-button">
+    <img src="images/envelope-outline.svg" alt="Suscripción" class="icon-envelope">
+    <span>Suscribirse a la lista de correo</span>
+    <span class="fa fa-paper-plane icon-paper-plane"></span>
+  </a>
+</div>
+
+            
+          </h3>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-5 mb-5">
+      <div class="col-lg-4">
+        <div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo">@theAcroGuru<span>.</span></a></div>
+        <p class="mb-4">En el mundo del AcroYoga, cada postura es una 
+        aventura épica! 🤸‍♂️ </p><p>Imagínate desafiando la gravedad 
+        como un gurú, cada equilibrio un acto de rebelión contra lo ordinario.</p>
+
+        <ul class="list-unstyled custom-social">
+          <li><a href="https://www.facebook.com/AcroYogaCoruna"><span class="fa fa-brands fa-facebook-f"></span></a></li>
+          <li><a href="https://www.youtube.com/@theacroguru"><span class="fa fa-brands fa-youtube"></span></a></li>
+          <li><a href="https://www.instagram.com/theacroguru/"><span class="fa fa-brands fa-instagram"></span></a></li>
+          
+          <li><a href="https://www.patreon.com/theacroguru" class="fa fa-brands fa-patreon" target="_blank"></a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-8">
+        <div class="row links-wrap">
+          <div class="col-6 col-sm-6 col-md-3">
+            <ul class="list-unstyled">
+              <li><a href="#">Acerca de</a></li>
+              <li><a href="#">Servicios</a></li>
+              <li><a href="#">Barajas de Tarot</a></li>
+              <li><a href="#">Contacto</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-sm-6 col-md-3">
+            <ul class="list-unstyled">
+				<li><a href="/blog">Antiguos flows y método</a></li>
+              <!--li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li-->
+            </ul>
+          </div>
+
+          <!-- Additional links or categories can be added here -->
+          
+        </div>
+      </div>
+
+    </div>
+
+    <div class="border-top copyright">
+      <div class="row pt-4">
+        <div class="col-lg-6">
+          <p class="mb-2 text-center text-lg-start">Copyright &copy; 2024 theAcroGuru. All Rights Reserved.</p>
+        </div>
+
+        <div class="col-lg-6 text-center text-lg-end">
+          <ul class="list-unstyled d-inline-flex ms-auto">
+            <li class="me-4"><a href="#">Terms &amp; Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/custom.js"></script>
+</body>
+</html>
