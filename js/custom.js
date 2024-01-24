@@ -1,31 +1,39 @@
 document.addEventListener("DOMContentLoaded", function() {
     const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
 
+    // Function to update active link highlighting
     function updateActiveLink() {
-        const currentUrl = window.location.href;
-        const currentPath = window.location.pathname;
+        const currentUrl = new URL(window.location.href);
+        const currentPath = currentUrl.pathname;
 
         navLinks.forEach(link => {
             const linkUrl = new URL(link.href);
+            let isActive = false;
 
-            if (linkUrl.href === currentUrl || 
-                (linkUrl.pathname === currentPath && currentUrl.endsWith(linkUrl.hash))) {
-                link.classList.add('active');
-            } else {
-                link.classList.remove('active');
+            // Exclude external links
+            if (linkUrl.hostname === currentUrl.hostname) {
+                // Check for anchor links or regular internal links
+                if ((linkUrl.hash && currentUrl.hash === linkUrl.hash) || (!linkUrl.hash && linkUrl.pathname === currentPath)) {
+                    isActive = true;
+                }
             }
+
+            // Update the 'active' class on the link
+            link.classList.toggle('active', isActive);
         });
     }
 
-    // Update active link on page load
+    // Initially update active link
     updateActiveLink();
 
-    // Update active link on hash change
-    window.addEventListener('hashchange', updateActiveLink);
-
-    // Update active link on history change
-    window.addEventListener('popstate', updateActiveLink);
+    // Add click event listener to nav links to update active link highlighting
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            setTimeout(updateActiveLink, 150); // delay to allow URL to update
+        });
+    });
 });
+
 
 
         
