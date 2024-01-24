@@ -17,7 +17,7 @@
 <body>
     <header>
         <!-- Navigation Bar -->
-        <nav class="navbar navbar-expand-lg navbar-dark custom-navbar" style="background-color: #3b5d50;"> <!-- Adjust the background color as per Furni theme -->
+        <nav class="navbar navbar-expand-lg navbar-dark custom-navbar " style="background-color: #3b5d50;"> <!-- Adjust the background color as per Furni theme -->
             <div class="container">
                 <a class="navbar-brand" href="#">TheAcroGuru</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -124,11 +124,21 @@ href="#about" class="btn btn-white-outline">¿Quien?</a></p>
                 <div id="contentBody">
 
 <p><strong>He estado practicando yoga desde 2009, cuando había tan sólo 3 o 4 centros de yoga en Coruña, como quien dice.</strong> Comencé con Iyengar Yoga debido a una grave lesión en la espalda. Más tarde practiqué las series de Ashtanga y exploré diversos métodos y disciplinas.</p>
+
+   <div id="additionalContent" style=" display:none;">
 <p>Desde el 2016 he estado mejorando mis conocimientos de masaje tailandés, Yoga, acro y otras artes y disciplinas relacionadas, estudiando un curso de masaje en la Escuela de Medicina Tradicinal Chinesa de Lisboa, talleres en la escuela de tailandés Hadadi, lecciones de Ashtanga con Xico Rodrigues, Filipa Veiga, Yoga con Margarida Alonso, Filipe Santos, Marta Coias, AcroYoga con Jerzy Badach, Daniel Scott, Lux SeattleAcro, Andrea Macia, Jacob Brown y Debbie Collis… entre otros, contemporáneo con Alba Cotelo, breaking con Samuel_aka_Serio… Kung Fu con Guilherme Luz… y comencé mi formación de maestro en AcroYoga con los increíbles Lucas y Maria de <a href="http://www.acroyogathai.com/"><em>Acro.Yoga.Thai.</em></a>. Todo esto principalmente en Lisboa y formaciones en Barcelona.</p>
 <p><strong>Mi estilo es interdisciplinar trayendo al AcroYoga conocimientos de disciplinas como Kung Fu, Calistenia, Danza, Contacto Improvisación o Tai Chi.</strong> También incluyo vuelo terapéutico con relajamientos en el aire o asanas a dos y varios cuerpos así como fundamentos de masaje tailandés para conseguir un toque sanador y gentil.</p>
 <p><strong>Aspiro a que el acroyoga sea tan conocido y practicado en La Coruña como ha llegado a ser aquí el yoga en los últimos años, y podamos tener clases de acroyoga todos los días y jams semanales practicadas tanto en lugares públicos (parques, playas…) como en centros adecuados durante los meses lluviosos.</strong></p>
 <p>Siempre hay espacio para la diversión trivial.<br>
 Incluso si en mis duras clases el AcroYoga es tratado como el arte de esculpir asanas en movimiento en un eterno aquí y ahora.</p>
+
+    </div>
+    
+ <button id="leerMasBtn" class="btn mb-3"  onclick="toggleContent()">Leer más</button>
+    <button id="ocultarBtn" class="btn mb-3" onclick="toggleContent()" 
+    style="display:none;">Resúmete</button>
+
+
 <p><strong>Namasté.</strong> <em>Venga que lo pasará bien usté.</em></p>
 
   </div>

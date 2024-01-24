@@ -34,6 +34,21 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+function toggleContent() {
+    var content = document.getElementById("additionalContent");
+    var leerMasBtn = document.getElementById("leerMasBtn");
+    var ocultarBtn = document.getElementById("ocultarBtn");
+
+    if (content.style.display === "none") {
+        content.style.display = "block";
+        leerMasBtn.style.display = "none";
+        ocultarBtn.style.display = "inline-block";
+    } else {
+        content.style.display = "none";
+        leerMasBtn.style.display = "inline-block";
+        ocultarBtn.style.display = "none";
+    }
+}
 
 
         
